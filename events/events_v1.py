@@ -14,16 +14,16 @@ pd.set_option('display.width', 1000)
 
 def get_experimental_indices(**kwargs):
     """
-        my copy from basico
-        This function  returns the exp idx for each dependent variable, with traces for all experiments.
+    my copy from basico
+    This function  returns the exp idx for each dependent variable, with traces for all experiments.
 
-        :param kwargs:
+    :param kwargs:
 
-        - | `model`: to specify the data model to be used (if not specified
-          | the one from :func:`.get_current_model` will be taken)
+    - | `model`: to specify the data model to be used (if not specified
+      | the one from :func:`.get_current_model` will be taken)
 
-        :return: dict of (dependent variable, experimental indices)
-        """
+    :return: dict of (dependent variable, experimental indices)
+    """
     dm = model_io.get_model_from_dict_or_default(kwargs)
     task = dm.getTask(TASK_PARAMETER_ESTIMATION)
     problem = task.getProblem()
