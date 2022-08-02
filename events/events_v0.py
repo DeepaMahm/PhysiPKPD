@@ -14,7 +14,6 @@ pd.set_option('display.max_rows', 500)
 pd.set_option('display.width', 1000)
 
 
-
 def create_events_from_tc(data_path):
     """
     """
@@ -28,20 +27,23 @@ def create_events_from_tc(data_path):
             [['drug1_c', f'[drug1_c] + {row["drug1"]}']]
         )
 
+
 if __name__ == '__main__':
 
     f = 'PK_dosing.cps'
     # -------------------------------------------------------------------------------------------------------------
     m = load_model(f)
     data_path = "dose_data.tsv"
+    set_species('drug1_c', initial_concentration=0, model=m)
+
     create_events_from_tc(data_path=data_path)
 
     # experiments = create_experiments(data_path=data_path)
     # load_experiments_from_dict(experiments=experiments)  # removes all existing experiments
 
     e = get_events()
-    f = 'PK_dosing_check.cps'
-    save_model(f, type='sbml')
-    save_model(f, type='copasi')
+    f = 'PK_dosing_check'
+    save_model(f + '.xml', type='sbml')
+    save_model(f + '.cps', type='copasi')
     load_model(f)
-    open_copasi(f)
+    open_copasi(f + '.cps')
