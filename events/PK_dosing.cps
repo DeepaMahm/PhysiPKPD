@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- generated with COPASI 4.36 (Build 260) (http://www.copasi.org) at 2022-08-02T13:59:28Z -->
+<!-- generated with COPASI 4.36 (Build 260) (http://www.copasi.org) at 2022-08-02T14:19:05Z -->
 <?oxygen RNGSchema="http://www.copasi.org/static/schema/CopasiML.rng" type="xml"?>
 <COPASI xmlns="http://www.copasi.org/static/schema" versionMajor="4" versionMinor="36" versionDevel="260" copasiSourcesModified="0">
   <ListOfFunctions>
@@ -76,7 +76,8 @@ Reaction scheme where the products are created from the reactants and the change
       </Metabolite>
       <Metabolite key="Metabolite_1" name="drug1_c" simulationType="reactions" compartment="Compartment_0" addNoise="false">
         <MiriamAnnotation>
-<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" />
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+
         </MiriamAnnotation>
       </Metabolite>
     </ListOfMetabolites>
@@ -167,7 +168,7 @@ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
         </ModelParameterGroup>
         <ModelParameterGroup cn="String=Initial Species Values" type="Group">
           <ModelParameter cn="CN=Root,Model=PDynamics,Vector=Compartments[Vp],Vector=Metabolites[drug1_p]" value="0" type="Species" simulationType="reactions"/>
-          <ModelParameter cn="CN=Root,Model=PDynamics,Vector=Compartments[Vc],Vector=Metabolites[drug1_c]" value="6.0221407599999996e+26" type="Species" simulationType="reactions"/>
+          <ModelParameter cn="CN=Root,Model=PDynamics,Vector=Compartments[Vc],Vector=Metabolites[drug1_c]" value="0" type="Species" simulationType="reactions"/>
         </ModelParameterGroup>
         <ModelParameterGroup cn="String=Initial Global Quantities" type="Group">
           <ModelParameter cn="CN=Root,Model=PDynamics,Vector=Values[lambda]" value="0.0001" type="ModelValue" simulationType="fixed"/>
@@ -201,7 +202,7 @@ xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
       <StateTemplateVariable objectReference="ModelValue_1"/>
     </StateTemplate>
     <InitialState type="initialState">
-      0 6.0221407599999996e+26 0 10 1 0.0001 0.00080000000000000004 
+      0 0 0 10 1 0.0001 0.00080000000000000004 
     </InitialState>
   </Model>
   <ListOfTasks>
