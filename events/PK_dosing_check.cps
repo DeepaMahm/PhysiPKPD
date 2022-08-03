@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- generated with COPASI 4.36.260 (Source) (http://www.copasi.org) at 2022-08-02T14:13:52Z -->
+<!-- generated with COPASI 4.36.260 (Source) (http://www.copasi.org) at 2022-08-03T05:16:38Z -->
 <?oxygen RNGSchema="http://www.copasi.org/static/schema/CopasiML.rng" type="xml"?>
 <COPASI xmlns="http://www.copasi.org/static/schema" versionMajor="4" versionMinor="36" versionDevel="260" copasiSourcesModified="0">
   <ListOfFunctions>
